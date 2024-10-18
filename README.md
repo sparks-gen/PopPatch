@@ -91,8 +91,7 @@
 
 ### Built With
 
-<a href="https://www.cprogramming.com/"><img src="https://github.com/bablubambal/All_logo_and_pictures/blob/main/programming%20languages/c.svg" alt="C Programming Logo" style="width:100px;height:100px;"></a>
-<!--* [![C][C.com]][C-url]-->
+* [![Next][Next.js]][Next-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,36 +100,24 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get PopPatch up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* A shell terminal
+* A reference genome
+* An alignment file (SAM) created by aligning an assembly to your reference 
+genome of choice.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/sparks-gen/PopPatch.git
    ```
-3. Install NPM packages
+2. Compile by running
    ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin sparks-gen/PopPatch
-   git remote -v # confirm the changes
+   make
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -140,9 +127,12 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Once the program has been compiled, simply provide it the alignment file and the
+reference genome. Optionally, you can provide a prefix to represent what would 
+you would like the output to be called.
+```sh
+./poppatch -f coat -m alignment.sam -r GRCh38.fna -p newReference
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,7 +171,7 @@ Don't forget to give the project a star! Thanks again!
 ### Top contributors:
 
 <a href="https://github.com/sparks-gen/PopPatch/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sparks-gen/PopPatch" alt="contrib.rocks image" />
+  sparks-gen
 </a>
 
 
@@ -231,5 +221,5 @@ Project Link: [https://github.com/sparks-gen/PopPatch](https://github.com/sparks
 [license-url]: https://github.com/sparks-gen/PopPatch/blob/master/LICENSE.txt
 <!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username -->
-[C.com]: https://github.com/bablubambal/All_logo_and_pictures/blob/main/programming%20languages/c.svg
+[C.com]: https://www.cprogramming.com/
 [C-url]: https://www.cprogramming.com/
