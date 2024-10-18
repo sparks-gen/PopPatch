@@ -1,0 +1,16 @@
+    poppatch [-f function] [-m alignment] [-r reference] <-p prefix>
+
+Functions
+    coat    Convert an assembly to the coordinates of [-r reference]
+    pan     Add assembly data to an existing [-r reference]
+
+Options:
+    -f, --function  Process to be performed on the data (see above)
+    -h, --help      Prints this message and exists
+    -m, --map       Mapping data where query data is aligned to the reference. 
+                    Accepted formats include: .sam
+    -p, --prefix    Prefix of the output file [poppatch].
+    -r, --reference Reference that the data has been aligned to. Accepted
+                    formats include: .fa, .fna, .fa.gz, .fna.gz, .fasta, 
+                    .fasta.gz
+    -v, --version   Prints the version information and exits
