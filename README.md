@@ -44,9 +44,9 @@
     <a href="https://github.com/sparks-gen/PopPatch"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sparks-gen/PopPatch/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/sparks-gen/PopPatch/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/sparks-gen/PopPatch/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/sparks-gen/PopPatch/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=">Request Feature</a>
   </p>
 </div>
 
