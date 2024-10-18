@@ -82,6 +82,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+After assembling a single genome and aligning that genome to a reference, 
+PopPatch creates a new reference by changing the sequences in the reference at 
+the locations where the other genome mapped to it. For more information, read
+the <a href="#">article</a>.
 
 
 
@@ -141,10 +145,10 @@ you would like the output to be called.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Coating function works on SAM files
+- [ ] Support BAM files
+- [ ] Create a graph genome
+
 
 See the [open issues](https://github.com/sparks-gen/PopPatch/issues) for a full list of proposed features (and known issues).
 
