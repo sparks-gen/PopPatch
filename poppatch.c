@@ -18,6 +18,7 @@ char *PREFIX = "poppatch";
 struct option longopts[] = {
     {"function", required_argument, 0, 'f'},
     {"help", no_argument, 0, 'h'},
+    {"usage", no_argument, 0, 'u'},
     {"map", required_argument, 0, 'm'},
     {"prefix", optional_argument, 0, 'p'},
     {"reference", required_argument, 0, 'r'},
@@ -35,7 +36,7 @@ int main(int argc, char *argv[])
     {
         fprintf(stdout, "%c", c);
     }
-    fprintf(stdout, "\n");
+    fprintf(stdout, "\n\n");
     fclose(version);
 
     // Open usage info
@@ -59,7 +60,7 @@ int main(int argc, char *argv[])
     char prefix[PATH_LEN];
     memset(prefix, '\0', PATH_LEN);
     char reference[PATH_LEN];
-    while ((opt = getopt_long(argc, argv, "f:hm:p::r:v:", longopts, &indexptr)) != -1)
+    while ((opt = getopt_long(argc, argv, "f:hum:p::r:v:", longopts, &indexptr)) != -1)
     {
         switch (opt)
         {
@@ -88,6 +89,13 @@ int main(int argc, char *argv[])
             }
             fclose(usage);
             return 0;
+        case 'u':
+            fseek(usage, 0, SEEK_SET);
+            while((c = fgetc(usage)) != EOF)
+            {
+                fprintf(stdout, "%c", c);
+            }
+            return 0;
         case 'm':
             sprintf(map, "%s", optarg);
             fprintf(stdout, "Map: %s\n", map);
@@ -108,11 +116,12 @@ int main(int argc, char *argv[])
             }
             fprintf(stdout, "\n%s\n", basic);
             return 0;
-        case '?':
+        // case '?':
+        //     fprintf(stdout, "\n%s\n", basic);
+        //     break; this causes default not to work
+        default:
             fprintf(stdout, "\n%s\n", basic);
-            break;
-        // default:
-        //     return 1;
+            return 1;
         }
     }
 

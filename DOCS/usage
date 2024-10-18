@@ -6,7 +6,8 @@ Functions
 
 Options:
     -f, --function  Process to be performed on the data (see above)
-    -h, --help      Prints this message and exists
+    -h, --help      Prints this message and exits
+    -u, --usage     Prints this message and exits
     -m, --map       Mapping data where query data is aligned to the reference. 
                     Accepted formats include: .sam
     -p, --prefix    Prefix of the output file [poppatch].
