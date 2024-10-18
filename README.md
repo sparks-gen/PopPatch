@@ -91,7 +91,8 @@
 
 ### Built With
 
-* [![C][C.com]][C-url]
+<a href="https://www.cprogramming.com/"><img src="https://github.com/bablubambal/All_logo_and_pictures/blob/main/programming%20languages/c.svg" alt="C Programming Logo" style="width:100px;height:100px;"></a>
+<!--* [![C][C.com]][C-url]-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
