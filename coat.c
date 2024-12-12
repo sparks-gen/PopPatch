@@ -81,6 +81,11 @@ int coat(char const *sam_name, char *prefix)
         {
             qname_1[i] = c;
         }
+        // Copilot help:
+        // while (isspace(fgetc(in_sam)) == 0)
+        // {
+        //     // Do nothing
+        // }
         for (size_t i = 1; isspace(fgetc(in_sam)) == 0; i++)
         {
             ;
