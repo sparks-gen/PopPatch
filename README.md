@@ -41,7 +41,7 @@
     Replace sequences within an existing reference genome to better represent 
     your target population or even species.
     <br />
-    <a href="https://github.com/sparks-gen/PopPatch"><strong>Explore the docs »</strong></a>
+    <!-- <a href="https://github.com/sparks-gen/PopPatch"><strong>Explore the docs »</strong></a> -->
     <br />
     <br />
     <a href="https://github.com/sparks-gen/PopPatch/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">Report Bug</a>
@@ -84,8 +84,8 @@
 ## About The Project
 After assembling a single genome and aligning that genome to a reference, 
 PopPatch creates a new reference by changing the sequences in the reference at 
-the locations where the other genome mapped to it. For more information, read
-the <a href="#">article</a>.
+the locations where the other genome mapped to it. For more information, an 
+article will be published shortly.
 
 
 
@@ -192,20 +192,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
 Project Link: [https://github.com/sparks-gen/PopPatch](https://github.com/sparks-gen/PopPatch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
 
 * []()
 * []()
-* []()
+* []() -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
