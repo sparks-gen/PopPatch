@@ -84,8 +84,8 @@
 ## About The Project
 After assembling a single genome and aligning that genome to a reference, 
 PopPatch creates a new reference by changing the sequences in the reference at 
-the locations where the other genome mapped to it. For more information, an 
-article will be published shortly.
+the locations where the other genome mapped to it. For more information, see the 
+<a href="https://www.sciencedirect.com/science/article/pii/S294968882500036X">published article</a>.
 
 
 
